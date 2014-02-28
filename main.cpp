@@ -62,23 +62,17 @@ void genString()
 			}
 
 			//if is a capital letter
-			else if (t >= 65)
+			else if (t >= 65 && t < 91)
 			{
-				if (t < 91)
-				{
-					s.push_back((char)t);
-					pushed = true;
-				}
+				s.push_back((char)t);
+				pushed = true;
 			}
 
 			//if letter is lower case
 			else if (t >= 97)
 			{
-				if (t < 123)
-				{
-					s.push_back((char) t);
-					pushed = true;
-				}
+				s.push_back((char) t);
+				pushed = true;
 			}
 
 		}//end while
